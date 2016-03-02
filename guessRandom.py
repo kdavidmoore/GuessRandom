@@ -1,4 +1,4 @@
-#Demonstration of binary search algorithm
+#Demonstration of binary search algorithm, but instead of the computer searching for a matching value, you get to look for it.
 
 import random
 
@@ -14,12 +14,12 @@ while myGuess != correctNum:
 	if myGuess > correctNum:
 		maxGuess = myGuess - 1
 		print "Your guess was too high."
-		print "Guess a new number between " + str(minGuess) + " and " + str(maxGuess)
+		print "Guess a new number between %d and %d" %(minGuess, maxGuess)
 		myGuess = int(raw_input("> "))
 	else:
 		minGuess = myGuess + 1
 		print "Your guess was too low."
-		print "Guess a new number between " + str(minGuess) + " and " + str(maxGuess)
+		print "Guess a new number between %d and %d" %(minGuess, maxGuess)
 		myGuess = int(raw_input("> "))
 
-print "That's it. The correct number was " + str(correctNum)
+print "That's it. The correct number was %d" %correctNum
