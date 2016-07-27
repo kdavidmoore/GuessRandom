@@ -1,5 +1,3 @@
-#Demonstration of binary search algorithm, but instead of the computer searching for a matching value, you get to look for it.
-
 import random
 
 maxGuess = 100
